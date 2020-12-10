@@ -511,6 +511,7 @@ footer img {
   height: 80px;
   flex-direction: column;
   margin-left: 70px;
+  margin-top: 12px;
 }
 
 .soc-block ul {
@@ -608,12 +609,18 @@ footer img {
   width: 370px;
 }
 
+.portfolio-list .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio-list .item-title {
+  width: 370px;
   padding: 20px 24px;
 }
 
 .portfolio-list img {
-  width: 370px;
+  width: 368px;
   height: 294px;
 }
 
