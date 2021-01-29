@@ -32,11 +32,11 @@ a {
 }
 
 .container {
-  max-width: 1170px;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
-  /*outline: 2px solid tomato;*/
 }
 
 .header {
@@ -46,19 +46,56 @@ a {
   padding-right: 0;
 }
 
+.container-header {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #ececec;
+  justify-content: space-between;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .nav {
   display: flex;
   align-items: center;
 }
 
-.logo {
-  display: block;
+.logo-header {
   width: 145px;
   height: 31px;
   left: 215px;
   top: 24px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
 }
 
+.logo-header-2 {
+  color: var(--logo-color);
+}
+
+.logo-footer {
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 2157px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.logo-footer-2 {
+  color: var(--primary-bg-color);
+}
 .nav-list {
   display: flex;
   margin-left: 93px;
@@ -141,7 +178,6 @@ a {
 
 /*HERO*/
 .section-hero {
-  margin-bottom: 94px;
   padding: 200px;
   margin-left: auto;
   margin-right: auto;
@@ -165,7 +201,7 @@ a {
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.2;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
@@ -191,6 +227,11 @@ a {
   border-style: solid;
   border-radius: 4px;
   border-color: var(--accent-color);
+}
+
+.futures-list {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .futures-flex {
@@ -260,7 +301,7 @@ a {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
@@ -414,6 +455,12 @@ a {
 }
 
 /*CLIENT*/
+
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .client-title {
   font-family: Roboto;
   font-style: normal;
@@ -423,8 +470,7 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-
-  margin: 94px auto 50px;
+  margin: 0px auto 50px;
 }
 
 .client-list {
@@ -477,18 +523,7 @@ footer {
 }
 
 .logo-footer {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: #2196f3;
-}
-
-.logo-footer span {
-  display: inline-block;
-  color: #ffffff;
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -519,7 +554,6 @@ footer img {
 
 .address-mail,
 .address-phone {
-  margin-top: 9px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -527,6 +561,9 @@ footer img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.address-item {
   margin-top: 9px;
 }
 
