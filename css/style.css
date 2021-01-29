@@ -41,7 +41,6 @@ a {
 
 .header {
   margin-bottom: 0;
-  border-bottom: 1px solid #ececec;
   padding-left: 0;
   padding-right: 0;
 }
@@ -49,7 +48,6 @@ a {
 .container-header {
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid #ececec;
   justify-content: space-between;
   width: 1170px;
   margin-left: auto;
@@ -178,7 +176,8 @@ a {
 
 /*HERO*/
 .section-hero {
-  padding: 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
 
@@ -466,7 +465,7 @@ a {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
@@ -615,11 +614,16 @@ footer img {
 
 /* страница пртфолио */
 
+.portfolio-section {
+  border-top: 1px solid #ececec;
+  padding-top: 94px;
+  padding-bottom: 64px;
+}
+
 .portfolio-section-list {
   display: flex;
   justify-content: center;
   margin-bottom: 34px;
-  margin-top: 94px;
 }
 
 .portfolio-section-list .item:not(:last-child) {
